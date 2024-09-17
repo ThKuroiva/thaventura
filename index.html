@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura Sobre Rodas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Medusa+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <h1>Aventura Sobre Rodas</h1>
+        </header>
+        <main>
+            <div id="page-content">
+                <!-- Página inicial -->
+                <div id="page1" class="page">
+                    <img src="https://img.freepik.com/fotos-premium/um-supercarro-azul-que-esta-em-um-fundo-branco_1239886-2424.jpg?w=740" alt="Carro" class="image">
+                    <div class="text">
+                        <h2>A Jornada Inesperada</h2>
+                        <p>Era uma manhã ensolarada quando Lucas decidiu que era hora de uma nova aventura. Ele estava animado para testar o novo carro, um modelo esportivo que ele havia comprado recentemente. O carro tinha uma cor azul brilhante e parecia pronto para conquistar qualquer estrada.</p>
+                        <p>Lucas dirigiu pela estrada rural, onde as árvores balançavam suavemente com a brisa. Ele estava explorando uma nova rota que havia encontrado em um mapa antigo. À medida que avançava, o cenário mudava, e logo ele se encontrou em uma trilha de terra sinuosa, cercada por montanhas imponentes.</p>
+                        <p>Com o carro deslizando suavemente pela trilha, Lucas sentiu a emoção de uma verdadeira aventura. Ele passava por rios e pequenas pontes de madeira, maravilhado com a beleza da natureza ao seu redor. Era um passeio perfeito, e ele sabia que essa seria uma das memórias mais marcantes de sua vida.</p>
+                        <button onclick="navigate('page2')">Continuar</button>
+                    </div>
+                </div>
+                
+                <!-- Página 2 -->
+                <div id="page2" class="page hidden">
+                    <img src="https://cdn.pixabay.com/photo/2020/10/24/08/55/autumn-5680878_1280.jpg" alt="Bifurcação" class="image">
+                    <h2>Escolha 1</h2>
+                    <p>Lucas chega a uma bifurcação na estrada. Ele pode escolher entre seguir pela estrada de terra mais íngreme ou pela trilha plana e coberta de vegetação. Qual caminho ele deve tomar?</p>
+                    <button onclick="navigate('page3')">Escolher estrada íngreme</button>
+                    <button onclick="navigate('page4')">Escolher trilha plana</button>
+                </div>
+                
+                <!-- Página 3 -->
+                <div id="page3" class="page hidden">
+                    <img src="https://img.freepik.com/fotos-gratis/montanha-caminho-estrada-panoramica-paisagem_158595-6060.jpg?t=st=1726592896~exp=1726596496~hmac=70c4d3f23d4c45356d03e8a2416dd48d537661eb6af32cb65f09e3ac309f61d9&w=740" alt="Estrada Íngreme" class="image">
+                    <h2>Estrada Íngreme</h2>
+                    <p>Lucas decide enfrentar a estrada íngreme. O carro se destaca enquanto sobe a ladeira, e ele encontra uma vista deslumbrante do topo da montanha. No entanto, a estrada se torna perigosa com rochas soltas e curvas fechadas.</p>
+                    <button onclick="navigate('page5')">Explorar mais</button>
+                </div>
+                
+                <!-- Página 4 -->
+                <div id="page4" class="page hidden">
+                    <img src="https://cdn.pixabay.com/photo/2021/07/07/16/31/landscape-6394751_1280.jpg" alt="Trilha Plana" class="image">
+                    <h2>Trilha Plana</h2>
+                    <p>Lucas opta pela trilha plana, que é mais tranquila e relaxante. Ele descobre uma pequena clareira com um lago sereno. A tranquilidade é agradável, e ele passa algum tempo desfrutando a paisagem.</p>
+                    <button onclick="navigate('page5')">Explorar mais</button>
+                </div>
+                
+                <!-- Página 5 -->
+                <div id="page5" class="page hidden">
+                    <img src="https://img.freepik.com/fotos-premium/um-menino-esta-em-pe-sobre-uma-rocha-olhando-para-uma-paisagem-com-uma-paisagem-ao-fundo_855221-4012.jpg?w=740" alt="Conclusão" class="image">
+                    <h2>Conclusão</h2>
+                    <p>Após explorar a área escolhida, Lucas volta para casa com uma nova perspectiva sobre a aventura. Ele aprendeu que cada caminho tem suas próprias maravilhas e desafios. A experiência o inspirou a buscar novas jornadas no futuro.</p>
+                    <button onclick="navigate('page1')">Voltar ao início</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Aventura Sobre Rodas</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

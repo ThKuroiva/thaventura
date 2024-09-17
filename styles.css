@@ -1,0 +1,89 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Medusa Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://img.freepik.com/fotos-gratis/vista-da-roda-no-carro-a-correr-a-alta-velocidade_23-2150635452.jpg?t=st=1726592168~exp=1726595768~hmac=2b7d810bb02e93d903593de5dd52d52245b719cd28a125817eccc1dd7192d172&w=740') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 20px;
+    min-height: 70px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.page {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    color: #eee;
+}
+
+.hidden {
+    display: none;
+}
+
+.image {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+button {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.7); /* Borda fina em RGB */
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+    outline: none;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgb(255, 0, 0); /* Muda a cor da borda ao passar o mouse */
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
